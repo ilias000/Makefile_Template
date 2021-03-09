@@ -14,7 +14,7 @@ $(PROGRAM): clean $(OBJS)
 # create and compile the individual files in
 # for every object file you have:
 nameOfObjectFile.o: nameOfSourceFileThatTheObjectFileNeeds.c # all the files, the object file needs to be created
-	$(CC) $(CFLAGS) $? 
+	$(CC) $(CFLAGS) -c $? 
 	# $? : current list of prerequisites
 
 clean:
